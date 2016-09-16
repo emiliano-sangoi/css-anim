@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+    Animaciones
+
+    localhost/css-anim/animations/well.html
+
+    Referencias:
+    http://www.w3schools.com/css/css3_animations.asp
+-->
+<html>
+    <head>
+        <title>Animaciones - Well</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            .main{
+                background-color: whitesmoke;
+                width: 100%;
+                height: 40em;
+                border: 2px dashed black;
+            }
+            #div1, #div2, #div3{
+                width: 250px;
+                height: 250px;
+            }
+
+            @keyframes rueda{
+                /*from { background-color: blue; }*/
+                /*to { background-color: gray; }*/
+                0% { border-radius: 10%,  }
+                50% { border-radius: 100%  }
+                70% { transform: translate(150px,0)  }
+                /*50% { border-radius: 50%  }*/
+                /*75% { border-radius: 75%  }*/
+                /*100% { border-radius: 100%, transform: rotate(90deg) 2s  }*/    
+            }
+            /*@keyframes div2{
+                from{ width:0; background-color: whitesmoke; }
+                to { width: 50%; background-color: brown; }
+            }*/
+
+            #div1{    
+                background-color: burlywood;
+                animation-name: rueda;
+                animation-duration: 3s;
+                animation-timing-function: ease-in;
+            }
+
+            /*#div2{
+                background-color: brown;
+                animation-name: div2;
+                animation-duration: 3s;
+                animation-timing-function: ease-in;
+                animation-delay: 3s;
+               
+            }*/
+
+        </style>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>
+            <h1>Animaciones</h1>
+            <hr/>
+
+            <div class="main">
+
+                <div id="div1"></div>
+                <!--<div id="div2"></div>-->
+                <!--<div id="div3"></div>-->
+
+            </div>
+        </div>
+    </body>
+</html>

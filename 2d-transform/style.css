@@ -1,0 +1,81 @@
+
+.rectangulo{
+    background-color: gray;
+    width: 100px;
+    height: 50px;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.rectangulo-azul{
+    background-color: blue;
+    width: 100px;
+    height: 50px;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.borde-negro{
+    border:3px solid black;
+    padding: 2em;
+    margin-top: 1em 0;
+}
+
+.inline{
+    display: inline;
+}
+
+.translate{
+    transform: translate(50px, 20px);
+}
+
+.rotate45{transform: rotate(45deg);}
+.rotate85{transform: rotate(85deg);}
+
+#scale{}
+.scale{
+    /* Amplia el doble en X y en un 50% la altura: */
+    transform: scale(2,1);
+}
+
+#skewx{
+    width: 30%;    
+}
+.skewx{
+    transform: skewX(45deg);
+}
+.skewy{
+    transform: skewY(45deg);
+}
+
+#puerta{
+    margin-top: 3em;
+}
+
+
+.marco{
+    float: left;
+    width: 10em;
+    height: 23em;
+    background-color: black;
+    border-top: 6px ridge black;
+    border-left: 6px ridge black;
+    border-right: 6px ridge black;
+    /*float: left;*/
+}
+.hoja{
+    float: left;
+    width: 10em;
+    height: 23em;
+    background-color: burlywood;
+    
+    /*float: right;*/
+    /*margin-top: 3em;*/
+    /*transform: translate(10em,0);*/
+    transform-origin: 0 0;
+    transform: skewY(10deg) translate(-6px, 7px);
+        /*translate(-6px, 6px) translateY(15px);*/
+
+}

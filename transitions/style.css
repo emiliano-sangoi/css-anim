@@ -1,0 +1,36 @@
+.marco-rojo{
+    width: 50%;
+    height: 10em;
+    border: 2px dotted red;
+    transition: transform 2s;
+    transition-delay: 2s;
+    background-color: red;
+}
+
+.marco-azul{
+    width: 50%;
+    /*height: 10em;*/
+    border: 2px dotted blue;    
+    background-color: blue;
+}
+
+img{
+    width: 50%;    
+}
+
+.marco-amarillo{
+    width: 50%;
+    height: 10em;
+    border: 2px dotted yellow;
+    transition: transform 2s ease-in-out, width 2s ease 2s;
+    background-color: yellow;
+}
+
+.marco-amarillo:hover{
+    transform: translate(50%,0) rotate(360deg);
+    width: 25%;
+}
+
+.marco-rojo:hover{    
+    transform: translate(50px,0);
+}
