@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+http://www.barelyfitz.com/screencast/html-training/css/positioning/
+
+localhost/css-anim/position/absolute.html
+
+Cuando a un elemento se lo pociona absolutamente se le dice exactamente a donde debe ir.
+El elemento es sacado del flujo normal y los elementos que le siguen ocupan su lugar
+-->
+<html>
+    <head>
+        <title>Posicionamiento en CSS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .square{
+                width: 100px;
+                height: 100px;
+            }
+            #div1{
+                background-color: yellow;
+                
+            }
+            
+            #cont{
+                position: relative;
+            }
+            
+            #div2{                
+                background-color: green;
+                
+                position: absolute;
+                top: 10px;
+                left: 20px;
+                /*overflow-x: hidden;*/
+                
+            }
+            
+            #div3{                
+                background-color: blueviolet;
+                
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            
+        <div id="div1" class="square">DIV 1</div>
+        <div id="cont">
+            <div id="div2" class="square">DIV 2</div>
+            
+        </div>
+        <div id="div3" class="square">DIV 3</div>
+        </div>
+    </body>
+</html>

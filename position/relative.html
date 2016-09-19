@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+http://www.barelyfitz.com/screencast/html-training/css/positioning/
+
+localhost/css-anim/position/relative.html
+
+Posicionar el elemento relativamente se refiere a desplazarlo cierta posicion de su posicion que tendria
+por defecto. En casi todas las ocasiones, la propiedad 'position' esta acompañada de las propiedades top, left,
+right, bottom.
+El lugar "por defecto" del elemento desplazado queda en blanco y los elementos que se situen luego de este,
+mantendran la pos. por defecto.
+-->
+<html>
+    <head>
+        <title>Posicionamiento en CSS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #div1{
+                background-color: yellow;
+                height: 20px;
+            }
+            
+            #div2{                
+                background-color: green;
+                height: 20px;
+                position: relative;
+                top: 10px;
+                left: 20px;
+                /*overflow-x: hidden;*/
+                
+            }
+            
+            #div3{                
+                background-color: blueviolet;
+                height: 20px;
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            
+        <div id="div1">DIV 1</div>
+        <div id="div2">DIV 2</div>
+        <div id="div3">DIV 3</div>
+        </div>
+    </body>
+</html>
